@@ -11,7 +11,7 @@
         <div class="container">
             <h2>Get in Touch</h2>
             <p>We'd love to hear from you! Fill out the form below.</p>
-            <form id="contactForm" class="contact-form" action="https://formsubmit.co/nithishanaricle@email.com" method="POST">
+            <form id="contactForm" class="contact-form" action="https://formsubmit.co/nithishanaricle@gmail.com" method="POST">
                 <input type="hidden" name="_subject" value="New submission!">
                 
                 <input type="hidden" name="_captcha" value="false">
@@ -38,7 +38,6 @@
         const successMessage = document.getElementById('successMessage');
 
         form.addEventListener('submit', (e) => {
-            e.preventDefault();
             successMessage.textContent = 'Your Request has been Submitted. We will connect with You Soon. 😊';
             form.action = "https://formsubmit.co/nithishanaricle@email.com";
             form.method = "POST"

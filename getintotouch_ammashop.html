@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get in Touch</title>
+</head>
+<body>
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <p>We'd love to hear from you! Fill out the form below.</p>
+            <form id="contactForm" class="contact-form" action="https://formsubmit.co/nithishanaricle@email.com" method="POST">
+                <input type="hidden" name="_subject" value="New submission!">
+                
+                <input type="hidden" name="_captcha" value="false">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                </div>
+                <button type="submit" class="btn-primary">Submit</button>
+            </form>
+            <p id="successMessage" class="success-message"></p>
+        </div>
+    </section>
+
+    <script>
+        const form = document.getElementById('contactForm');
+        const successMessage = document.getElementById('successMessage');
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            successMessage.textContent = 'Your Request has been Submitted. We will connect with You Soon. 😊';
+            form.action = "https://formsubmit.co/nithishanaricle@email.com";
+            form.method = "POST"
+        });
+    </script>
+    <style>
+        /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Contact Form Section */
+.contact-form-section {
+    padding: 3rem 1rem;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+.contact-form-section h2 {
+    font-size: 2rem;
+    color: #D22B2B;
+    margin-bottom: 1rem;
+}
+.contact-form-section p {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Form */
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.form-group {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+.form-group label {
+    display: block;
+    font-weight: bold;
+    color: #D22B2B;
+    margin-bottom: 0.5rem;
+}
+.form-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.form-group input:focus {
+    border-color: #D22B2B;
+    outline: none;
+    box-shadow: 0 0 5px rgba(210, 43, 43, 0.5);
+}
+
+/* Button */
+.btn-primary {
+    background-color: #D22B2B;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.btn-primary:hover {
+    background-color: #F5B7B1;
+}
+
+/* Success Message */
+.success-message {
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    color: #D22B2B;
+    font-weight: bold;
+}
+
+    </style>
+</body>
+</html>

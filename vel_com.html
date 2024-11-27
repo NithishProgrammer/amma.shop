@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buy Vel 1</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: white;
+      color: black;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #D22B2B; /* Updated red color */
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+    .container {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      border: 2px solid #D22B2B; /* Updated red color */
+      border-radius: 8px;
+    }
+    h2 {
+      text-align: center;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      font-weight: bold;
+      display: block;
+    }
+    input[type="text"],
+    input[type="number"],
+    input[type="tel"],
+    input[type="address"] {
+      width: 97%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    select {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .price {
+      font-size: 18px;
+      font-weight: bold;
+      color: #D22B2B; /* Updated red color */
+      text-align: center;
+    }
+    .product-image {
+      width: 160px;
+      height: auto;
+      border-radius: 8px;
+    }
+    button {
+      background-color: white; /* Updated red color */
+      color: #D22B2B;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+      border: 2px solid #D22B2B;
+      border-radius: 16px;
+      font-weight: bold;
+    }
+    button:hover {
+      background-color: #D22B2B;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Buy This Vel</h1>
+  </header>
+
+  <div class="container">
+    <h2>Order Form</h2>
+
+    <form action="https://formsubmit.co/nithishanaricle@gmail.com" method="POST" enctype="multipart/form-data">
+
+      <input type="hidden" name="_subject" value="New Order for Vel - Combo !">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://nithishprogrammer.github.io/amma.shop/thanks_cus">
+
+      <center>
+        <input type="image" id="image" src="vel_com.png" name="attachment" style="border-radius: 14px; width: 180px;" disabled>
+    
+      </center>
+
+
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Phone (+91):</label>
+      <input type="tel" id="phone" name="phone" required>
+    </div>
+
+    <div class="form-group">
+      <label for="address">Address:</label>
+      <input type="text" id="address" name="address" required>
+    </div>
+
+    <div class="form-group">
+      <label for="address">Pincode</label>
+      <input type="text" id="address" name="Pincode" required>
+    </div>
+
+    <div class="form-group">
+      <label for="quantity">Quantity:</label>
+      <select id="quantity" name="quantity" onchange="updatePrice()" required>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+
+    <div class="price">
+      <br>
+      Total Price: ₹<span id="totalPrice">200</span>
+      <p style="font-size: 12px; color: rgb(30, 177, 30);">Only Cash on Delivery Available</p>
+    </div>
+    <br>
+
+    <button type="submit" onclick="buynow()">Buy Now</button>
+  </div>
+</form>
+
+  <script>
+    function updatePrice() {
+      const quantity = document.getElementById("quantity").value;
+      const pricePerUnit = 200;
+      const totalPrice = quantity * pricePerUnit;
+      document.getElementById("totalPrice").innerText = totalPrice;
+    }
+
+    function buynow(){
+
+username1 = document.getElementById('name').value;
+localStorage.setItem("Name" , username1)
+window.location.href = "thanks_buying.html"
+}
+  </script>
+
+</body>
+</html>

@@ -13,8 +13,8 @@
             <p>We'd love to hear from you! Fill out the form below.</p>
             <form id="contactForm" class="contact-form" action="https://formsubmit.co/nithishanaricle@gmail.com" method="POST">
                 <input type="hidden" name="_subject" value="New submission!">
-                
                 <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://nithishprogrammer.github.io/amma.shop/thanks_cus.html">
                 <div class="form-group">
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" placeholder="Enter your name" required>
@@ -39,7 +39,7 @@
 
         form.addEventListener('submit', (e) => {
             successMessage.textContent = 'Your Request has been Submitted. We will connect with You Soon. 😊';
-            form.action = "https://formsubmit.co/nithishanaricle@email.com";
+            form.action = "https://formsubmit.co/nithishanaricle@gmail.com";
             form.method = "POST"
         });
     </script>

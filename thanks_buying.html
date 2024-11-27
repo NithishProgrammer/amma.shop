@@ -78,17 +78,15 @@
 <body>
   <div class="thank-you-container">
     <h1 id="thakx">Thank You!</h1>
-    <p id="letmsg">Your Order Has been submitted. Your Vel(s) would be ready soon and Our Team willl contact you for informing about the Delivery date and other info. Remember, Only Cash on Delivery Avalable.</p>
+    <p id="letmsg">Your Order Has been submitted. Your Vel(s) would be ready soon and Our Team willl contact you for informing about the Delivery date and other info. Remember, <b style="color: rgb(63, 224, 63); font-weight: normal;"> Only Cash on Delivery Avalable</b>.</p>
     <a href="ammashop.html">Continue</a>
   </div>
 
   <script>
     thanx = document.getElementById('thakx');
     thanx_para = document.getElementById('letmsg');
-    usernname = localStorage.getItem("Name");
-    Phone = localStorage.getItem("Phone");   
+    usernname = localStorage.getItem("Name"); 
     thanx.innerText = "Thanks  " + usernname;
-    thanx_para.innerText = "Your Order Has been submitted. Your Vel(s) would be ready soon and Our Team will contact you " + Phone + " (You no.)" + "for informing about the Delivery date and other info. Remember, Only Cash on Delivery Avalable."
   </script>
 </body>
 </html>

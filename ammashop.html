@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Murugar Vel Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="navbar">
+        <div class="container">
+            <h1 class="logo">Anandhi's</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>Divine Murugar Vel for Your Home</h2>
+            <p>Enhance your spiritual journey with premium quality Murugar Vel, crafted with devotion and excellence.</p>
+            <a href="#products" class="btn-primary">Explore Products</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h3>About Us</h3>
+            <p>We bring you beautifully crafted Murugar Vel to inspire faith and spirituality. Our Vels are made from high-quality materials, perfect for worship and gifting.</p>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h3>Our Products</h3>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="vel1.jpg" alt="Golden Vel">
+                    <h4>Rs.100</h4>
+                    <p>Premium gold-plated Murugar Vel.</p>
+                    <a href="#" class="btn-secondary">Buy Now</a>
+                </div>
+                <div class="product-card">
+                    <img src="vel2.jpg" alt="Silver Vel">
+                    <h4>Rs.150</h4>
+                    <p>Elegant silver Murugar Vel for your home.</p>
+                    <a href="#" class="btn-secondary">Buy Now</a>
+                </div>
+                <div class="product-card">
+                    <img src="vel_com.png" alt="Brass Vel">
+                    <h4>Brass Vel</h4>
+                    <p>Traditional brass Murugar Vel.</p>
+                    <a href="#" class="btn-secondary">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h3>Contact Us</h3>
+            <p>Have questions or need assistance? Reach out to us today!</p>
+            <a href="#" class="btn-primary">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Murugar Vel Store. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <style>
+        /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header */
+.navbar {
+    background-color: #D22B2B;
+    color: white;
+    padding: 1rem 0;
+}
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+}
+.btn-primary {
+    background-color: white;
+    color: #D22B2B;
+    border: 2px solid white;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s;
+}
+.btn-primary:hover {
+    background-color: #F5B7B1;
+    color: #D22B2B;
+}
+
+/* Hero Section */
+.hero {
+    background: #D22B2B;
+    color: white;
+    text-align: center;
+    padding: 4rem 1rem;
+}
+.hero h2 {
+    font-size: 2rem;
+}
+.hero p {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+
+/* About Section */
+.about {
+    padding: 3rem 1rem;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+.about h3 {
+    font-size: 2rem;
+    color: #D22B2B;
+}
+
+/* Products Section */
+.products {
+    padding: 3rem 1rem;
+    background-color: white;
+    text-align: center;
+}
+.products h3 {
+    font-size: 2rem;
+    color: #D22B2B;
+    margin-bottom: 2rem;
+}
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+.product-card {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+}
+.product-card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+.btn-secondary {
+    background-color: #D22B2B;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+/* Contact Section */
+.contact {
+    background: #D22B2B;
+    color: white;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+.contact a {
+    color: #D22B2B;
+    background-color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+.contact a:hover {
+    background-color: #F5B7B1;
+}
+
+/* Footer */
+.footer {
+    background-color: #D22B2B;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 638px) {
+    .product-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    .product-card {
+        width: 100%;
+    }
+
+    .logo{
+        font-size: 1rem;
+    }
+    .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2px;
+}
+
+    </style>
+</body>
+</html>
